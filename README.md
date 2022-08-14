@@ -1,3 +1,5 @@
+![Last Cat Standing](/LastCatStanding.png "IPUMS Last Cat Standing")
+
 # Last Cat Standing
 
 This is a coding exam to create a single-elimination tournament for 16 photos obtained via API endpoint, using HTML, CSS & JavaScript
