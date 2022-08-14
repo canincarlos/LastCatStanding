@@ -1,0 +1,40 @@
+#champions {
+    padding: 25px 0px 25px 0px;
+    background-color: white;
+}
+#hold {
+    padding: 25px;
+}
+.title {
+    padding: 20px;
+}
+.stage {
+    margin: 25px 0px 25px 0px;
+    padding: 25px;
+}
+.pic {
+    margin: 15px;
+}
+.photo {
+    display: inline; /* the default for span */
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid white;
+    /* border: 10px solid blue;
+    background-color: yellow; */
+}
+.gphoto {
+    display: inline; /* the default for span */
+    padding: 5px;
+    margin: 50px;
+    
+}
+.rounds {
+    color: #000;
+    padding: 15px;
+}
+.winner {
+    margin: 25px;
+    width: 90%;
+    height: auto;
+}

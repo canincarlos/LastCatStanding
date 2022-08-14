@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Last Cat Standing</title>
+        <!-- Latest compiled and minified CSS -->
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous">
+        </script>
+
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    
+    
+    <body class="container mx-auto">
+        <div class="grid place-items-center">
+            <h1 class="text-6xl font-bold underline p-5">Last Cat Standing!</h1>
+            <span id="storage" class=""></span>
+            <h3 class="rounds text-4xl font-bold"></h3>
+        </div>
+
+        <div class="grid justify-items-center">
+            <div class="stage justify-items-center">
+                <div class="grid lg:grid-cols-2 md:grid-cols-1  place-items-center">
+                    <span class="pic">
+                        <a id="photo1" href="#">
+                            <img class="photo" src=""/>
+                        </a>
+                    </span>
+
+                    <span class="pic lg:float-right md:float-none">
+                        <a id="photo2" href="#">
+                            <img class="photo" src=""/>
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <div id="hold" class="grid justify-items-center">
+            </div>
+        </div>
+
+        <div id="champions" class="grid justify-items-center my-10">
+            <div id="champ-row" class="grid justify-items-center"></div>
+        </div>
+
+
+    </body>
+
+    <script src="./main.js"></script>
+    
+</html>
