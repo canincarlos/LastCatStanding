@@ -1,12 +1,12 @@
-![Last Cat Standing](/LastCatStanding.png "IPUMS Last Cat Standing")
+![Last Cat Standing](/img/LastCatStanding.png "IPUMS Last Cat Standing")
 
 # Last Cat Standing
 
 This is a coding exam to create a single-elimination tournament for 16 photos obtained via API endpoint, using HTML, CSS & JavaScript
 
-After accomplishing the initial goals, as well as the extra points; I decided to use the project as an opportunity to compare the CSS framework Bootstrap & TailwindCSS.
+After accomplishing the initial goals, as well as the extra points; I decided to use the project as an opportunity to compare the CSS framework Bootstrap & TailwindCSS; with two additional stretch goals of creating the SPA into a Vue app, and then adding a Ruby on Rails server, to maintain persistent winning GIFs. These last two goals were not completed, as I preferred to focus on writing this write-up and documenting the code.
 
-In this write-up I will first explain my process and provide a few examples discuss this comparison, after which cover a few difficulties, before talking about possible solutions via Bootstrap or Tailwind.
+That said, in this write-up I will first explain my process and provide a few examples for comparison, after which I'll cover a few difficulties, before talking about possible solutions via Bootstrap or Tailwind.
 
 
 ## Build Process
@@ -30,6 +30,8 @@ Last photo set > swap winners & staging array
 Empty the winner's list and repeat
 if len(winner's list ==1) ?
 
+![First Steps](/img/paper.jpg "First Steps")
+
 ### Initial Coding Build
 
 Boiler plate HTML, CSS and JavaScript were implemented that utilized jQuery and Bootstrap.
@@ -43,6 +45,12 @@ Now I added preliminary flourishes, and the extra-credit option, that would help
 Background-color for the competition space
 Preparing Local Storage to retain winning images
 Adding a headline to track competition rounds.
+
+## Taking a break ...
+
+All of this work was accomplished on Friday, and so I felt entitled to a tasty beverage and food with a friend ... who happened to be playing live music in St Paul ... though still being considerate of the task at hand, and my mind primed for the work ... I did not want to let my busride go to waste, and so using the Android application JuiceSSH, I was able to ssh into my server on which I was serving and maintaining a copy of the code ... I continued to make updates (mainly aesthetic / CSS stuff) to the code ... 
+
+![JuiceSSH](/img/juicessh.jpg "Juice SSH")
 
 ### Complications
 
@@ -59,4 +67,15 @@ Bootstrap was initially used for basic formatting (background colors, buttons, e
 Bootstrap == straightforward, accessible syntax; difficulty centering
 
 Tailwind == explicit syntax, better grid/centering control - more divs required though; need to create btn classes separately
+
+I really like Tailwind personally, so let's review the negatives of the framework first.
+
+1) Decorator tags are "meaningless" i.e. `<h1 class="2xl-text">` and `<h3 class="text-3xl">` are both mechanically accceptable tags and attributes.
+2) You will need to create you own `button` classes, as well as classes for alerts; Tailwind does not provide these out of the box.
+
+There is another glitch that I've noticed with Bootstap as well; sometimes when setting parameters for varying screensizes, the setting will not display correctly, even though the code is written correctly. *More on this later.*
+
+Now for what I don't like about Bootstrap ... honestly, I don't really know except that I've been using it since it was released ... and it feels clunky now. The buttons and designs are wonderful, the aesthetic is pleasing, and the implementation is often fairly straight-forward. It's the centering of objects that always frustrates me; and exactly why I've been leaning more on Tailwind lately.
+
+The issue with Tailwinds' method of centering, is that objects are centered both horizontelly AND vertically. This means that more `<div>` tags are required to position all objects in the layout accordingly. More `<div>` tags enable sections to be quarantined, and aligned without affecting other aspects of the layout.
 
