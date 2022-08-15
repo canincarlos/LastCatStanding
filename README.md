@@ -90,7 +90,7 @@ I really like Tailwind personally, so let's review the negatives of the framewor
 1) Decorator tags are "meaningless" i.e. `<h1 class="text-2xl">` and `<h3 class="text-4xl">` are both mechanically accceptable tags and attributes.
 2) You will need to create your own `button` classes, as well as classes for alerts and messages; Tailwind does not provide these out of the box.
 
-There is another glitch that I've noticed with Bootstap as well; sometimes when setting parameters for varying screensizes, the setting will not display correctly, even though the code is written correctly. *More on this later.*
+There is another glitch that I've noticed with Bootstap, and Tailwind as well; sometimes when setting parameters for varying screensizes, the setting will not display correctly, even though the code is written correctly. *More on this later.*
 
 Now for **what I don't like about Bootstrap** ... I've been using it since it was released ... and it feels clunky now (it feels like Legos, and I want Technics!). The buttons and designs are wonderful, the aesthetic is pleasing, and the implementation is often fairly straight-forward. It's the centering of objects that always frustrates me; and exactly why I've been leaning more on Tailwind lately.
 
@@ -98,9 +98,15 @@ The *issue* with Tailwinds' method of centering, is that objects are centered bo
 
 And this is most helpful when trying to create a UI that will function in predictable, and aesthetically pleasing ways, across platforms. Granted, the additional `<div>` tags aren't horrible, because they can also be used to denote aspects of the page for accessibility purposes as well.
 
+## What I do like
+
+As mentioned, Bootstrap is boilerplate basic; easy to get an idea of what you're building. Tailwind allows you to fine-tune via class names as you go though!
+
+As well, the ability to create a configuration file that can be carried from one project to the next is very appealing.
+
 ### More Info on Screen Size Complications
 
-One thing I've noticed with both frameworks is how break-sizes and media-sizes can vary with implementation.
+One thing I've noticed with both frameworks is how breakpoints and media-sizes can vary with implementation.
 
 The best example being the following line of code:
 
