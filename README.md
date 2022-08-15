@@ -6,7 +6,7 @@
 
 This is a solution to a coding exam that asked me to create a single-elimination tournament for 16 photos obtained via API endpoint, using HTML, CSS & JavaScript.
 
-After accomplishing the initial goals, as well as the extra points; I decided to use the project as an opportunity to compare the CSS framework Bootstrap & TailwindCSS; with two additional stretch goals of creating the SPA into a Vue app, and then adding a Ruby on Rails server, to maintain persistent winning GIFs. These last two goals were not completed, as I preferred to focus on writing this write-up and documenting the code.
+After accomplishing the initial goals, as well as the extra points; I decided to use the project as an opportunity to compare the CSS framework [Bootstrap](https://getbootstrap.com/) & [TailwindCSS](https://tailwindcss.com/); with two additional stretch goals of creating the SPA into a Vue app, and then adding a Ruby on Rails server, to maintain persistent winning GIFs. These last two goals were not completed, as I preferred to focus on writing this write-up and documenting the code.
 
 That said, in this write-up I will first explain my process and provide a few examples for comparison, after which I'll cover a few difficulties, before talking about possible solutions via Bootstrap or Tailwind.
 
