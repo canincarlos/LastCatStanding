@@ -37,7 +37,7 @@ Pen and paper was used to record this, after which it was improved to describe t
 
 ![First Steps](/img/paper.jpg "First Steps")
 
-> A quick note on web-design *best practices* ... each framework and domain seems to have their own variances of ideas wrt to what "best practices" actually are ... my goal was to be clear with my code, and keep it relatively clean. To these ends I have separate HTML, CSS and JavaScript files. I did attempt to be considerate of a11y accessibility; while regarding the JavaScript code, I listed the variables first, followed by functions, followed by operational code.
+> A quick note on web-design *best practices* ... each framework and domain seems to have their own ideas wrt to what "best practices" actually are ... my goal was to be clear with my code, and keep it relatively clean. To these ends I have separate HTML, CSS and JavaScript files. I did attempt to be considerate of a11y; while regarding the JavaScript code, I listed the variables first, followed by functions, followed by operational code.
 
 > I decided to make a single page application, rather than a multi-page application, due to time and preferred focus. The creation of a Vue app, with the addition of persistant database, feels more appropriate for a multi-page application. Both the competition and gallery space are able to be accessibly displayed on the same-page, and that seemed reasonable enough for this exam.
 
@@ -69,7 +69,7 @@ I did not want to let my bus ride go to waste, and so using the Android applicat
 
 ### Complications
 
-I knew that there would be issues with normalizing image sizes, as well as centering images/objects, across screensizes. I did not attempt to remedy the image size issue do to the constraints/focus of the exam.
+I knew that there would be issues with normalizing image sizes, as well as centering images/objects, across screensizes. I did not attempt to remedy the image size issue due to the constraints/focus of the exam.
 
 Next, when implementing Local Storage; after clearing the local storage the page needs to be refreshed (`window.location.reload()`) immediately, otherwise the Local Storage won't be cleared.
 
@@ -98,7 +98,7 @@ I really like Tailwind personally, so let's review the negatives of the framewor
 
 There is another glitch that I've noticed with Bootstap, and Tailwind as well; sometimes when setting parameters for varying screensizes, the setting will not display correctly, even though the code is written correctly. *More on this later.*
 
-Now for **what I don't like about Bootstrap** ... I've been using it since it was released ... and it feels clunky now (it feels like Legos, and I want Technics!). The buttons and designs are wonderful, the aesthetic is pleasing, and the implementation is often fairly straight-forward. It's the centering of objects that always frustrates me; and exactly why I've been leaning more on Tailwind lately.
+Now for **what I don't like about Bootstrap** ... I've been using it since it was released ... and it feels clunky (it feels like Legos, and I want Technics!). The buttons and designs are wonderful, the aesthetic is pleasing, and the implementation is often fairly straight-forward. It's the centering of objects that always frustrates me; and exactly why I've been leaning more on Tailwind lately. (I like symmetry.)
 
 The *issue* with Tailwinds' method of centering, is that objects are centered both horizontally AND vertically; you cannot seem to choose one or the other. This means that more `<div>` tags are required to position all objects in the layout accordingly. These additional `<div>` tags enable sections to be quarantined, and aligned without affecting other aspects of the layout.
 
@@ -108,7 +108,7 @@ And this is most helpful when trying to create a UI that will function in predic
 
 As mentioned, Bootstrap is boilerplate basic; easy to get an idea of what you're building. Tailwind allows you to fine-tune via class names as you go though!
 
-As well, the ability to create a configuration file that can be carried from one project to the next is very appealing.
+As well, Tailwind's ability to create a configuration file that can be carried from one project to the next is very appealing.
 
 ### More Info on Screen Size Complications
 
