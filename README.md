@@ -37,9 +37,9 @@ Pen and paper was used to record this, after which it was improved to describe t
 
 ![First Steps](/img/paper.jpg "First Steps")
 
-> A quick note on web-design *best practices* ... each framework and domain seems to have their own variances of ideas wrt to what "best practices" actually are ... my goal was to be clear with my code, and keep it relatively clean. To these ends I have separate HTML, CSS and JavaScript files. I did attempt to be considerate of a11y accessibility; while regarding the JavaScript code, I listed by variables first, followed by functions, followed by operational code.
+> A quick note on web-design *best practices* ... each framework and domain seems to have their own variances of ideas wrt to what "best practices" actually are ... my goal was to be clear with my code, and keep it relatively clean. To these ends I have separate HTML, CSS and JavaScript files. I did attempt to be considerate of a11y accessibility; while regarding the JavaScript code, I listed the variables first, followed by functions, followed by operational code.
 
-> I decided to make a single page application, rather than a multi-page application, due to time and preferred focus. The creation of a Vue app, with the addition of persistant database, feels more appropriate for a multi-page application. Both the competition and gallery space are able to accessibly displayed on the same-page; and that seemed reasonable for this exam.
+> I decided to make a single page application, rather than a multi-page application, due to time and preferred focus. The creation of a Vue app, with the addition of persistant database, feels more appropriate for a multi-page application. Both the competition and gallery space are able to be accessibly displayed on the same-page, and that seemed reasonable enough for this exam.
 
 ### Initial Coding Build
 
@@ -59,7 +59,7 @@ Lastly, I added preliminary flourishes, and the extra-credit component, that wou
 
 ## Taking a break ...
 
-All of this work was accomplished on Friday, and so I felt entitled to a tasty beverage and food with a friend that evening ... who happened to be playing live music in St Paul ... though still being considerate of the task at hand, and my mind primed for the work ... I did not want to let my bus ride go to waste, and so using the Android application [JuiceSSH](https://juicessh.com/), I was able to ssh into my server on which I am serving and maintaining a copy of the code ... I continued to make updates (mainly aesthetic / CSS stuff) to the code ... 
+All of this work was accomplished on Friday, and so I felt entitled to a tasty beverage and food with a friend that evening ... who happened to be playing live music in St Paul ... though still being considerate of the task at hand, and my mind primed for the work ... I did not want to let my bus ride go to waste, and so using the Android application [JuiceSSH](https://juicessh.com/), I was able to ssh into my server on which I am serving and maintaining a copy of the code ... I continued to make updates (mainly aesthetic / CSS stuff) to the code using Vi ... 
 
 ![JuiceSSH](/img/juicessh.jpg "Juice SSH")
 
@@ -69,7 +69,7 @@ I knew that there would be issues with normalizing image sizes, as well as cente
 
 Next, when implementing Local Storage; after clearing the local storage the page needs to be refreshed (`window.location.reload()`) immediately, otherwise the Local Storage won't be cleared.
 
-Not exactly a complication, but I did not write any error messages ... I'm familiar with Promises in JavaScript; though with regards to this project ... things were so straightforward that error-messages don't feel entirely applicable. I may be wrong, and am open to learning where they might best be placed. Perhaps if the API call fails, I suppose ... I'll put a `.catch()` there quick :p
+And while not exactly a complication, I did not write any error messages ... I'm familiar with Promises in JavaScript; though with regards to this project ... things were so straightforward that error-messages don't feel entirely applicable. I may be wrong, and am open to learning where they might best be placed. Perhaps if the API call fails, I suppose ... I'll put a `.catch()` there quick :p
 
 # Bootstrap VS TailwindCSS
 
@@ -83,7 +83,7 @@ So I removed all of the Bootstrap CSS, and copied the barebones of the SPA into 
 
 **Bootstrap** == straightforward, accessible syntax; difficulty centering.
 
-**Tailwind** == explicit syntax, better grid/centering control - more divs required though; need to create btn classes separately.
+**Tailwind** == explicit syntax, better grid/centering control - more divs required though; need to create `btn` classes separately.
 
 I really like Tailwind personally, so let's review the negatives of the framework first.
 
@@ -94,9 +94,9 @@ There is another glitch that I've noticed with Bootstap as well; sometimes when 
 
 Now for **what I don't like about Bootstrap** ... I've been using it since it was released ... and it feels clunky now (it feels like Legos, and I want Technics!). The buttons and designs are wonderful, the aesthetic is pleasing, and the implementation is often fairly straight-forward. It's the centering of objects that always frustrates me; and exactly why I've been leaning more on Tailwind lately.
 
-The *issue* with Tailwinds' method of centering, is that objects are centered both horizontelly AND vertically; you cannot seem to choose one or the other. This means that more `<div>` tags are required to position all objects in the layout accordingly. These additional `<div>` tags enable sections to be quarantined, and aligned without affecting other aspects of the layout.
+The *issue* with Tailwinds' method of centering, is that objects are centered both horizontally AND vertically; you cannot seem to choose one or the other. This means that more `<div>` tags are required to position all objects in the layout accordingly. These additional `<div>` tags enable sections to be quarantined, and aligned without affecting other aspects of the layout.
 
-And this is most helpful when trying to create a UI that will function in predictable and aesthetically pleasing ways, across platforms. Granted, the additional `<div>` tags aren't horrible, because they can also be used to denote aspects of the page for accessibility purposes as well, i.e. `tabindex`.
+And this is most helpful when trying to create a UI that will function in predictable, and aesthetically pleasing ways, across platforms. Granted, the additional `<div>` tags aren't horrible, because they can also be used to denote aspects of the page for accessibility purposes as well.
 
 ### More Info on Screen Size Complications
 
@@ -114,7 +114,7 @@ During attempts to adjust centering, this code was *not* changed; and yet it bec
 
 > This may have been due to zooming options in the browser.
 
-As well, I noticed that the SPA displays differently in Firefox, than it does in Brave; this was noticed when the `.stage` and `#champions` sections had background colors; the sections spanned to full width of the page on mobile with Firefox. 
+As well, I noticed that the SPA displays differently in Firefox, than it does in Brave; this was noticed more clearly when the `.stage` and `#champions` sections had background colors; the sections spanned to full width of the page on mobile with Firefox. 
 
 It may be more difficult to notice now.
 
@@ -126,7 +126,7 @@ While the stretch goal of using Vue was not completed, the boilerplate code was 
 
 The project was incredibly enjoyable. My thought was that the exam focused on two objectives: demonstrate a working knowledge of HTML, CSS, and JavaScript, while demonstrating the ability to communicate one's work and decision paths.
 
-Feeling confident that I could construct the basic project, I attempted to take an additional step of using the project to do a shallow comparison of two CSS frameworks; hopefully to add further utility to the the project.
+Feeling confident that I could construct the basic project, I attempted to take an additional step of using the project to do a shallow comparison of two CSS frameworks; hopefully to add further utility to the solution.
 
 An added bonus was being able to see the application without any design CSS; and from this barebones structure being able to build the same application with varying frameworks; and eventually into a Vue app.
 
