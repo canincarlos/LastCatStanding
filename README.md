@@ -37,6 +37,8 @@ Pen and paper was used to record this, after which it was improved to describe t
 
 ![First Steps](/img/paper.jpg "First Steps")
 
+> A quick note on web-design *best practices* ... each framework and domain seems to have their own variances of ideas wrt to what "best practices" actually are ... my goal was to be clear with my code, and keep it relatively clean. To these ends I have separate HTML, CSS and JavaScript files. I did attempt to be considerate of a11y accessibility; while regarding the JavaScript code, I listed by variables first, followed by functions, followed by operational code.
+
 ### Initial Coding Build
 
 Boiler plate HTML, CSS and JavaScript were implemented that import jQuery and Bootstrap.

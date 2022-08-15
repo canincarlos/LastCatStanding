@@ -1,7 +1,11 @@
+// Necessary variables
+
 $: stage = [];
 $: winners = [];
 $: count = 1;
 $: wHistory = JSON.parse(localStorage.getItem("winners"));
+
+// Needed Functions
 
 function processVote(winner){
     var target = $(winner).children("img").attr('src');
@@ -43,6 +47,8 @@ function winRound(wHistory, winners){
     });
 }
 
+// Consume the API to get images
+
 $.get( "https://photo-voting.hiring.ipums.org/images/", function( data ) {
     stage = data.data
     $(".rounds").html("Click the GIF to Choose Your Fighter !");
@@ -54,7 +60,7 @@ $.get( "https://photo-voting.hiring.ipums.org/images/", function( data ) {
         $(".rounds").html("Fighters are on break (the API endpoint is unreachable.)");
     });
 
-
+// Check Local Storage for past champions
 
 if (wHistory === null){
     $: wHistory = [];
@@ -70,12 +76,16 @@ if (wHistory === null){
     }
 }
 
+// Clear Local Storage if desired
+
 $("#removeLS").on('click', function(){
     localStorage.removeItem("winners");
     $("#champions").remove()
     $(this).remove();
     window.location.reload();
 });
+
+// This is what happens when a picture is chosen.
 
 $('.pic a').on('click', function(){
     processVote($(this))
