@@ -45,7 +45,7 @@ Pen and paper was used to record this, after which it was improved to describe t
 
 Boiler plate HTML, CSS and JavaScript were implemented that import jQuery and Bootstrap.
 
-Next, the onClick event was coded with the photo URL's hardcoded. Then, the winner array was created and tested. After which the API endpoint was connected; and the tournament mechanics fine-tuned to achieve their goal.
+Next, the onClick event was coded with the photo URLs hardcoded. Then, the winner array was created and tested. After which the API endpoint was connected; and the tournament mechanics fine-tuned to achieve their goal.
 
 Now that the mechanics of the application were established, code optimization took centerstage; the first step was moving the *processVote*, *roundChange*, and *winRound* mechanics out of the onClick event, and into their own functions. 
 
