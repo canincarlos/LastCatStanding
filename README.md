@@ -1,5 +1,7 @@
 ![Last Cat Standing](/img/LastCatStanding.png "IPUMS Last Cat Standing")
 
+[Link to Game](//www.dreamfreely.xyz/ipums/tailwind)
+
 # Last Cat Standing
 
 This is a solution to a coding exam that asked me to create a single-elimination tournament for 16 photos obtained via API endpoint, using HTML, CSS & JavaScript.
