@@ -24,10 +24,15 @@ Using JavaScript's jQuery library, an on('click') event would be triggered by th
 Pen and paper was used to record this, after which it was improved to say the following:
 
 Consume API > get all photos (post in staging array)
+
 Display first two photos
+
 Select 1 photo (post in the winner's array)
+
 Last photo set > swap winners & staging array
+
 Empty the winner's list and repeat
+
 if len(winner's list ==1) ?
 
 ![First Steps](/img/paper.jpg "First Steps")
