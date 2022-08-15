@@ -10,7 +10,7 @@ After accomplishing the initial goals, as well as the extra points; I decided to
 
 That said, in this write-up I will first explain my process, after which I'll cover a few difficulties, then I'll do a shallow comparison of Bootstrap and Tailwind.
 
-I chose to use the jQuery library because feel that demonstration of basic coding abilities, DOM comprehension, and this write-up, were the items to focus on, rather than attemptting to dazzle with library selections, etc.
+I chose to use the jQuery library to prioritize the demonstration of basic coding abilities, DOM comprehension, and this write-up, rather than attemptting to dazzle with library selections, etc.
 
 And so we continue ...
 
