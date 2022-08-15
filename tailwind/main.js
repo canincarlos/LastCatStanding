@@ -45,12 +45,16 @@ function winRound(wHistory, winners){
 
 $.get( "https://photo-voting.hiring.ipums.org/images/", function( data ) {
     stage = data.data
+    $(".rounds").html("Click the GIF to Choose Your Fighter !");
+    $(".stage").css("background-color", "white");
     $("#photo1").children("img").attr("src", stage[0]);
     $("#photo2").children("img").attr("src", stage[1]);
-});
+})
+    .catch(function(){
+        $(".rounds").html("Fighters are on break (the API endpoint is unreachable.)");
+    });
 
-$(".rounds").html("Click the GIF to Choose Your Fighter !");
-$(".stage").css("background-color", "white");
+
 
 if (wHistory === null){
     $: wHistory = [];
