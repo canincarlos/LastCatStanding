@@ -109,3 +109,17 @@ This may have been due to zooming options in the browser.
 As well, I noticed that the SPA displays differently in Firefox, than it does in Brave; this was noticed when the `.stage` and `#champions` sections had background colors. It may be more difficult to notice now.
 
 # Stretch Goals
+
+While the stretch goal of using Vue was not completed, the boilerplate code was created, and Vue-Router included to make a separate page for Persistent Champions. The Ruby on Rails server was not even started. Though both goals may be pursued in order to refresh myself on the frameworks.
+
+# Conclusion
+
+The project was incredibly enjoyable. My thought was that the examine focused on two objects: demonstrate a function working knowledge of HTML, CSS, and JavaScript, while demonstrating the ability to communicate one's work and decision paths.
+
+Feeling confident that I could construct the basic project, I attempted to take an additional step of using the project to do a shallow comparison of two CSS frameworks; hopefully to add further utility to the the project.
+
+An added bonus was being able to see the application without any design CSS; and from this barebones structure being able to build the same application with varying frameworks.
+
+Admittedly, I did not research Bootstrap to resolve the centering as much I could have ... and this may be due to bias on my part. It was great to refresh myself Tailwind, though in both cases, I used CDN access. Tailwind does have some unique configuration options which can remedy some of the aforementioned complications.
+
+Again, in conclusion, fun project, thank you for the chance to create this solution!
