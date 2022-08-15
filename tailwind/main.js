@@ -61,7 +61,7 @@ if (wHistory === null){
         .append('<h1 class="text-6xl font-bold underline">Past Champions</h1>')
         .append('<button type="button" class="bg-yellow-500 text-black font-bold py-2 px-4 rounded-full m-8" id="removeLS">Remove Past Champions</button>');
     for (var i=0;i < wHistory.length;i++){
-        let string = '<img class="gphoto" src="'+wHistory[i]+'"/>'
+        let string = '<img class="gphoto" src="'+wHistory[i]+'" alt="Past Champion"/>'
         $(".gallery").append(string)
     }
 }

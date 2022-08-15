@@ -15,24 +15,24 @@
     
     
     <body class="container mx-auto">
-        <div class="grid place-items-center">
+        <nav class="grid place-items-center">
             <h1 class="text-6xl font-bold underline p-5">Last Cat Standing!</h1>
             <span id="storage" class=""></span>
             <h3 class="rounds text-4xl font-bold"></h3>
-        </div>
+        </nav>
 
         <div class="grid justify-items-center">
             <div class="stage justify-items-center">
                 <div class="grid lg:grid-cols-2 md:grid-cols-1  place-items-center">
-                    <span class="pic">
+                    <span class="pic" role="contestant">
                         <a id="photo1" href="#">
-                            <img class="photo" src=""/>
+                            <img class="photo" src="" alt="Contestent A"/>
                         </a>
                     </span>
 
-                    <span class="pic lg:float-right md:float-none">
+                    <span class="pic lg:float-right md:float-none" role="contestant">
                         <a id="photo2" href="#">
-                            <img class="photo" src=""/>
+                            <img class="photo" src="" alt="Contestent B"/>
                         </a>
                     </span>
                 </div>

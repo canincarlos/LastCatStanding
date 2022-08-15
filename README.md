@@ -36,15 +36,15 @@ Pen and paper was used to record this, after which it was improved to say the fo
 
 Boiler plate HTML, CSS and JavaScript were implemented that utilized jQuery and Bootstrap.
 
-Next the onClick event was coded with photo URL's hardcoded and the winner array created and tested. After which the API endpoint was connected; and the tournament mechanics fine-tuned to achieve their goal.
+Next, the onClick event was coded with photo URL's hardcoded and the winner array created and tested. After which the API endpoint was connected; and the tournament mechanics fine-tuned to achieve their goal.
 
-Now that the mechanics of the application were established, code optimization took centerstage; the first step was moving the processVote, roundChange, and winRound mechanics out of the onClick event, and into their own functions. Next was cleaning up the CSS, an odd combination of classes and ids were used to identify DOM elements and coordinate their changes, in accordance with gameplay.
+Now that the mechanics of the application were established, code optimization took centerstage; the first step was moving the processVote, roundChange, and winRound mechanics out of the onClick event, and into their own functions. Next was cleaning up the CSS, a combination of classes and ids were used to identify DOM elements and coordinate their changes, in accordance with gameplay. These names were reduced where possible.
 
-Now I added preliminary flourishes, and the extra-credit option, that would help going forward.
+Then I added preliminary flourishes, and the extra-credit option, that would help going forward.
 
-Background-color for the competition space
-Preparing Local Storage to retain winning images
-Adding a headline to track competition rounds.
+ 1) Background-color for the competition space
+ 2) Preparing Local Storage to retain winning images
+ 3) Adding a headline to track competition rounds.
 
 ## Taking a break ...
 
@@ -54,13 +54,15 @@ All of this work was accomplished on Friday, and so I felt entitled to a tasty b
 
 ### Complications
 
-I knew there would be issues with normalizing images sizes, as well as centering images across screensizes.
+I knew that there would be issues with normalizing images sizes, as well as centering images across screensizes.
 
-Lastly, when implementing Local Storage; after clearing the local storage the page needs to be refreshed immediately, otherwise the Local Storage won't be cleared.
+Lastly, when implementing Local Storage; after clearing the local storage the page needs to be refreshed (`window.location.reload()`) immediately, otherwise the Local Storage won't be cleared.
 
 # Bootstrap VS TailwindCSS
 
-Bootstrap was initially used for basic formatting (background colors, buttons, etc). I've always had difficulty centering objects with Bootstrap; and this time was no different. So I removed all of the Bootstrap CSS, and copied the barebones of the SPA into the basicapp folder.
+Onwards to our comparison ...
+
+Bootstrap was initially used for basic formatting (background colors, buttons, etc). I've always had difficulty centering objects with Bootstrap; and this time was no different. So I removed all of the Bootstrap CSS, and copied the barebones of the SPA into the basicapp folder. And rebuilt the aesthetic aspects using Tailwind CSS.
 
 **Quick Comparison**
 
@@ -75,7 +77,9 @@ I really like Tailwind personally, so let's review the negatives of the framewor
 
 There is another glitch that I've noticed with Bootstap as well; sometimes when setting parameters for varying screensizes, the setting will not display correctly, even though the code is written correctly. *More on this later.*
 
-Now for what I don't like about Bootstrap ... honestly, I don't really know except that I've been using it since it was released ... and it feels clunky now. The buttons and designs are wonderful, the aesthetic is pleasing, and the implementation is often fairly straight-forward. It's the centering of objects that always frustrates me; and exactly why I've been leaning more on Tailwind lately.
+Now for what I don't like about Bootstrap ... honestly, I don't really know except that I've been using it since it was released ... and it feels clunky now (it feels like Legos, and I want Technics!). The buttons and designs are wonderful, the aesthetic is pleasing, and the implementation is often fairly straight-forward. It's the centering of objects that always frustrates me; and exactly why I've been leaning more on Tailwind lately.
 
-The issue with Tailwinds' method of centering, is that objects are centered both horizontelly AND vertically. This means that more `<div>` tags are required to position all objects in the layout accordingly. More `<div>` tags enable sections to be quarantined, and aligned without affecting other aspects of the layout.
+The issue with Tailwinds' method of centering, is that objects are centered both horizontelly AND vertically; you cannot seem to choose one or the other. This means that more `<div>` tags are required to position all objects in the layout accordingly. These additional `<div>` tags enable sections to be quarantined, and aligned without affecting other aspects of the layout.
+
+And this is most helpful when trying to create a UI that will function in predictable and aesthetically pleasing ways, across platforms. Granted, the additional `<div>` tags aren't horrible, because they can also be used to denote aspects of the page for accessibility purposes as well.
 
