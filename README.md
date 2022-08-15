@@ -65,6 +65,8 @@ I knew that there would be issues with normalizing image sizes, as well as cente
 
 Lastly, when implementing Local Storage; after clearing the local storage the page needs to be refreshed (`window.location.reload()`) immediately, otherwise the Local Storage won't be cleared.
 
+Not exactly a complication, but I did not write any error messages ... I'm familiar with Promises in JavaScript; though with regards to this project ... things were so straightforward that error-messages don't feel entirely applicable. I may be wrong, and am open to learning where they might best be placed. Perhaps is the API call fails, I suppose ... I'll put a catch there quick :p
+
 # Bootstrap VS TailwindCSS
 
 Onwards to our comparison ...
