@@ -47,7 +47,9 @@ Boiler plate HTML, CSS and JavaScript were implemented that import jQuery and Bo
 
 Next, the onClick event was coded with the photo URL's hardcoded. Then, the winner array was created and tested. After which the API endpoint was connected; and the tournament mechanics fine-tuned to achieve their goal.
 
-Now that the mechanics of the application were established, code optimization took centerstage; the first step was moving the *processVote*, *roundChange*, and *winRound* mechanics out of the onClick event, and into their own functions. Next was cleaning up the CSS, a combination of classes and ids were used to identify DOM elements and coordinate their changes, in accordance with gameplay. These names were condensed where possible.
+Now that the mechanics of the application were established, code optimization took centerstage; the first step was moving the *processVote*, *roundChange*, and *winRound* mechanics out of the onClick event, and into their own functions. 
+
+Next was cleaning up the CSS, a combination of classes and ids were used to identify DOM elements and coordinate their changes, in accordance with gameplay. These names were condensed where possible.
 
 Lastly, I added preliminary flourishes, and the extra-credit component, that would help going forward.
 
@@ -59,7 +61,9 @@ Lastly, I added preliminary flourishes, and the extra-credit component, that wou
 
 ## Taking a break ...
 
-All of this work was accomplished on Friday, and so I felt entitled to a tasty beverage and food with a friend that evening ... who happened to be playing live music in St Paul ... though still being considerate of the task at hand, and my mind primed for the work ... I did not want to let my bus ride go to waste, and so using the Android application [JuiceSSH](https://juicessh.com/), I was able to ssh into my server on which I am serving and maintaining a copy of the code ... I continued to make updates (mainly aesthetic / CSS stuff) to the code using Vi ... 
+All of this work was accomplished on Friday, and so I felt entitled to a tasty beverage and food with a friend that evening ... who happened to be playing live music in St Paul ... though still being considerate of the task at hand, and my mind primed for the work ... 
+
+I did not want to let my bus ride go to waste, and so using the Android application [JuiceSSH](https://juicessh.com/), I was able to ssh into my server on which I am serving and maintaining a copy of the code ... I continued to make updates (mainly aesthetic / CSS stuff) to the code using Vi ... 
 
 ![JuiceSSH](/img/juicessh.jpg "Juice SSH")
 
@@ -69,7 +73,9 @@ I knew that there would be issues with normalizing image sizes, as well as cente
 
 Next, when implementing Local Storage; after clearing the local storage the page needs to be refreshed (`window.location.reload()`) immediately, otherwise the Local Storage won't be cleared.
 
-And while not exactly a complication, I did not write any error messages ... I'm familiar with Promises in JavaScript; though with regards to this project ... things were so straightforward that error-messages don't feel entirely applicable. I may be wrong, and am open to learning where they might best be placed. Perhaps if the API call fails, I suppose ... I'll put a `.catch()` there quick :p
+And while not exactly a complication, I did not write any error messages ... I'm familiar with Promises in JavaScript; though with regards to this project ... things were so straightforward that error-messages don't feel entirely applicable. 
+
+I may be wrong, and am open to learning where they might best be placed. Perhaps if the API call fails, I suppose ... I'll put a `.catch()` there quick :p
 
 # Bootstrap VS TailwindCSS
 
@@ -136,6 +142,8 @@ Feeling confident that I could construct the basic project, I attempted to take 
 
 An added bonus was being able to see the application without any design CSS; and from this barebones structure being able to build the same application with varying frameworks; and eventually into a Vue app.
 
-Admittedly, I did not research Bootstrap to resolve the centering as much I could have ... and this may be due to bias on my part. It was great to refresh myself with Tailwind though, in both cases I used CDN access. Tailwind *does* have some unique configuration options that can be implemented when building from code, which can remedy some of the aforementioned complications. But the game plays!
+Admittedly, I did not research Bootstrap to resolve the centering as much I could have ... and this may be due to bias on my part. It was great to refresh myself with Tailwind though, in both cases I used CDN access. 
+
+Tailwind *does* have some unique configuration options that can be implemented when building from code, which can remedy some of the aforementioned complications. But the game plays!
 
 Again, in conclusion, fun project, thank you for the chance to create this solution!
