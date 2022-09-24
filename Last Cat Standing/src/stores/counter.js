@@ -31,7 +31,6 @@ export const useStore = defineStore({
     chosen(img) {
       this.winners.push(img)
       if (this.images.length === 2 && this.winners.length === 1) {
-        console.log('end of the match', img)
         this.images = []
         this.winners = []
         this.challenger_1 = img
@@ -40,7 +39,6 @@ export const useStore = defineStore({
       } else if (this.images.length === 2) {
         this.counter++
         this.roundChange()
-        console.log('New Round', this.images, this.winners)
       } else {
         this.images.splice(0, 2);
         this.setImages()
