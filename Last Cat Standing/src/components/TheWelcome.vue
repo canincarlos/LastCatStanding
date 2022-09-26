@@ -2,7 +2,7 @@
 import { storeToRefs } from 'pinia'
 import { useStore } from '@/stores/counter'
  
-import Challenger from './Challenger.vue'
+import ChallengerPane from './ChallengerPane.vue'
 
 const vueStore = useStore()
 const {challenger_1, challenger_2, counter } = storeToRefs(vueStore)
@@ -26,9 +26,9 @@ function reset () {
   </div>
   
   
-  <Challenger msg="Challenger #1" :challenger="challenger_1"/>
+  <ChallengerPane msg="Challenger #1" :challenger="challenger_1"/>
   
-  <Challenger msg="Challenger #2" :challenger="challenger_2" v-if="counter != 0"/>
+  <ChallengerPane msg="Challenger #2" :challenger="challenger_2" v-if="counter != 0"/>
 
   <div class="reset" v-if="counter == 0">
     <button @click="reset">

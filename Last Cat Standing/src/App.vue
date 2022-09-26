@@ -20,7 +20,7 @@ const vueStore = useStore()
   </header>
 
   <RouterView />
-  <div v-for="img in vueStore.winners">
+  <div v-for="img in vueStore.winners" :key="img.id">
     <img :src="img"/>
   </div>
 </template>
