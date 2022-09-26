@@ -10,6 +10,10 @@ chosen() is the EventHandler, while in an effort to optimize code, roundChange()
 
 Though first an async function is called to get the data from the API.
 
+![Main Page](./RoundPage.png "Main Page")
+
+![Champion Page](./victor.png "Champion Page")
+
 # Next Steps
 - [ ] Add Ruby API
 - [ ] Move components to Storybooks
