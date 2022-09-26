@@ -30,7 +30,11 @@ export const useStore = defineStore({
     chosen(img) {
       this.winners.push(img)
       if (this.images.length === 2 && this.winners.length === 1) {
-        this.images = [], this.winners = [], this.challenger_1 = img, this.challenger_2 = '', this.counter = 0
+        this.images = []
+        this.winners = []
+        this.challenger_1 = img
+        this.challenger_2 = ''
+        this.counter = 0
       } else if (this.images.length === 2) {
         this.counter++
         this.roundChange()
