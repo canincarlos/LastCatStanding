@@ -18,23 +18,19 @@ export const useStore = defineStore({
       this.images = data.data;
       this.setImages()
     },
+    setImages () {
+      this.challenger_1 = this.images[0]
+      this.challenger_2 = this.images[1]
+    },
     roundChange() {
       this.images = this.winners
       this.winners = []
       this.setImages()
     },
-    setImages () {
-      this.challenger_1 = this.images[0]
-      this.challenger_2 = this.images[1]
-    },
     chosen(img) {
       this.winners.push(img)
       if (this.images.length === 2 && this.winners.length === 1) {
-        this.images = []
-        this.winners = []
-        this.challenger_1 = img
-        this.challenger_2 = ''
-        this.counter = 0
+        this.images = [], this.winners = [], this.challenger_1 = img, this.challenger_2 = '', this.counter = 0
       } else if (this.images.length === 2) {
         this.counter++
         this.roundChange()
