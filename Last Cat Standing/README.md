@@ -15,9 +15,10 @@ Though first an async function is called to get the data from the API.
 ![Champion Page](./victor.png "Champion Page")
 
 # Next Steps
-- [ ] Add Ruby API
+- [ ] Add lifestyle hooks
 - [ ] Move components to Storybooks
 - [ ] Add Tailwind
+- [ ] Add Ruby API
 
 ## Project Setup
 
